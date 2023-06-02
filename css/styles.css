@@ -1,0 +1,244 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    max-height: fit-content;
+  }  
+:root{
+    --blue:#338eff;
+    --darkblue:#133560;
+    --pink:#ff338e;
+    --grey:lightgrey;
+    --white:#ffffff;
+    --widthheight250: 250px;
+    --mailmainposition: 15vw;
+    --mediafont: 22px;
+}
+body{
+    font-family: 'Didact Gothic', sans-serif; 
+    color: #0e0e0e; 
+    text-align: center; 
+    line-height: 1.6; 
+    font-size: 16px;
+}
+
+/*Page Header*/
+
+.page-header{
+    max-height: fit-content;
+    position: relative;
+    top: 0%;
+    display: flex;
+    width: 100%;
+}
+.page-header_item{
+    flex: 0 1 200px;
+}
+.page-header_item:last-child{
+    flex-grow: 1;
+    text-align: right;
+}
+.navigation-list li{
+    display: inline-block;
+    margin-left: 15px;
+}
+section{
+
+}
+.grid{
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+.grid_item{
+    background-color:var(--grey);
+    padding: 1px;
+}
+
+/*Page Footer*/
+
+footer{
+    display: block;
+    position:absolute;
+    bottom: 0;
+    left:46%;
+    height: fit-content;
+    margin: 0;
+}
+.page-footer{
+    flex: 1 1 100px;
+    text-align: center;
+    flex-direction: column;
+    display: flex
+}
+.profilelink:hover{
+    opacity: .8;
+}
+
+a{
+    transition-duration: .2s;
+    display: inline-block;
+    color: var(--blue); 
+    text-decoration: none;}
+a:link{color:var(--blue)}
+a:visited{color: var(--pink);}
+a:hover{
+    font-weight: bold;
+    transform: scale(1.05);
+}
+a:focus{font-weight: bold;}
+a:active{
+    color: #133560;
+}
+
+table{
+    font-size: 75%;
+}
+
+/*Home Page*/
+
+.homeportrait{
+    float: left;
+    border-radius: 50%;
+    width: var(--widthheight250); 
+    height: var(--widthheight250);
+}
+.homeprofile{
+    position: relative;
+    display: block;
+    max-width: 700px;
+    height:fit-content;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+.profiledesc{
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+/*About Me page*/
+
+.downloadbutton, button{
+    font-family: inherit;
+    display: inline-block;
+    border: none;
+    height: 30px;
+    width: 150px;
+    color: var(--white);
+    background-color:var(--blue);
+    border-radius: 5px;
+    transition-duration: .4s;
+}
+.downloadbutton:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: .95;
+}
+.downloadbutton:active{
+    transform: scale(.1);
+}
+
+.aboutmeprofile{
+    display: block;
+}
+.aboutmeportrait{
+    float: left;
+    left: 0%;
+    max-width: 300px;
+    max-height: auto;
+    border-radius: 5%;
+}
+.aboutme{
+    line-height: 1.6; 
+    text-indent: 1cm;
+}
+
+form{
+    display: inline-block;
+}
+
+.mailman{
+    animation-name: rotation;
+    animation-duration: 1.3s;
+    animation-timing-function:ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    float: left;
+    position: relative;
+    bottom: var(--mailmainposition);
+    left: var(--mailmainposition);
+    max-width: 150px;
+    max-height: auto;
+}
+
+
+/*Universals*/
+p{
+    color: var(--primary-color);
+}
+
+.pageh1{
+    font-size: 36px;
+}
+
+li{list-style-type: none;}
+
+/*Keyframes and animations*/
+
+
+@keyframes rotation {
+    from{
+        transform: rotate(15deg);
+    }
+
+    to{
+        transform: rotate(-15deg);
+    }
+}
+
+
+
+/*Media Queries*/
+
+@media all and (max-width: 320px) and (max-width: 480px){
+    .pageh1{
+        font-size: 24px;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .grid_item:last-child{
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+    h1{
+        font-size: var(--mediafont);
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 768px){
+    .grid {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: var(--mediafont);
+    }
+  }
+/*
+Order of statuses= visited->hover->active
+Defaults:
+-font size is 16px
+-line height is about 110% to 120%, 1.6 is recommended
+-indent is two spaces
+*/

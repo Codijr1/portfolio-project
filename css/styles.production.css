@@ -1,0 +1,330 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
+body{
+    font-family: 'Didact Gothic', sans-serif; 
+    color: #0e0e0e; 
+    text-align: center; 
+    line-height: 1.6; 
+    font-size: 16px;
+}
+
+/*Page Header*/
+
+.page-header{
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    position: relative;
+    top: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+.page-header_item{
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
+}
+.page-header_item:last-child{
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: right;
+}
+.navigation-list li{
+    display: inline-block;
+    margin-left: 15px;
+}
+section{
+
+}
+.grid{
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    justify-items: center;
+    -ms-flex-line-pack: space-evenly;
+        align-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 200px 20px 200px 20px 200px;
+    grid-template-columns: 200px 200px 200px;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+.grid > *:nth-child(1){
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+.grid > *:nth-child(2){
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+.grid > *:nth-child(3){
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+}
+.grid_item{
+    background-color:lightgrey;
+    padding: 1px;
+}
+
+/*Page Footer*/
+
+footer{
+    display: block;
+    position:absolute;
+    bottom: 0;
+    left:46%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0;
+}
+.page-footer{
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100px;
+            flex: 1 1 100px;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+.profilelink:hover{
+    opacity: .8;
+}
+
+a{
+    -webkit-transition-duration: .2s;
+         -o-transition-duration: .2s;
+            transition-duration: .2s;
+    display: inline-block;
+    color: #338eff; 
+    text-decoration: none;}
+a:link{color:#338eff}
+a:visited{color: #ff338e;}
+a:hover{
+    font-weight: bold;
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+}
+a:focus{font-weight: bold;}
+a:active{
+    color: #133560;
+}
+
+table{
+    font-size: 75%;
+}
+
+/*Home Page*/
+
+.homeportrait{
+    float: left;
+    border-radius: 50%;
+    width: 250px; 
+    height: 250px;
+}
+.homeprofile{
+    position: relative;
+    display: block;
+    max-width: 700px;
+    height:-webkit-fit-content;
+    height:-moz-fit-content;
+    height:fit-content;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+.profiledesc{
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+/*About Me page*/
+
+.downloadbutton{
+    font-family: inherit;
+    display: inline-block;
+    border: none;
+    height: 30px;
+    width: 150px;
+    color: #ffffff;
+    background-color:#338eff;
+    border-radius: 5px;
+    -webkit-transition-duration: .4s;
+         -o-transition-duration: .4s;
+            transition-duration: .4s;
+}
+
+button{
+    font-family: inherit;
+    display: inline-block;
+    border: none;
+    height: 30px;
+    width: 150px;
+    color: #ffffff;
+    background-color:#338eff;
+    border-radius: 5px;
+    -webkit-transition-duration: .4s;
+         -o-transition-duration: .4s;
+            transition-duration: .4s;
+}
+.downloadbutton:hover{
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: .95;
+}
+.downloadbutton:active{
+    -webkit-transform: scale(.1);
+        -ms-transform: scale(.1);
+            transform: scale(.1);
+}
+
+.aboutmeprofile{
+    display: block;
+}
+.aboutmeportrait{
+    float: left;
+    left: 0%;
+    max-width: 300px;
+    max-height: auto;
+    border-radius: 5%;
+}
+.aboutme{
+    line-height: 1.6; 
+    text-indent: 1cm;
+}
+
+form{
+    display: inline-block;
+}
+
+.mailman{
+    -webkit-animation-name: rotation;
+            animation-name: rotation;
+    -webkit-animation-duration: 1.3s;
+            animation-duration: 1.3s;
+    -webkit-animation-timing-function:ease-in-out;
+            animation-timing-function:ease-in-out;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+
+    float: left;
+    position: relative;
+    bottom: 15vw;
+    left: 15vw;
+    max-width: 150px;
+    max-height: auto;
+}
+
+
+/*Universals*/
+p{
+    color: undefined;
+}
+
+.pageh1{
+    font-size: 36px;
+}
+
+li{list-style-type: none;}
+
+/*Keyframes and animations*/
+
+
+@-webkit-keyframes rotation {
+    from{
+        -webkit-transform: rotate(15deg);
+                transform: rotate(15deg);
+    }
+
+    to{
+        -webkit-transform: rotate(-15deg);
+                transform: rotate(-15deg);
+    }
+}
+
+
+@keyframes rotation {
+    from{
+        -webkit-transform: rotate(15deg);
+                transform: rotate(15deg);
+    }
+
+    to{
+        -webkit-transform: rotate(-15deg);
+                transform: rotate(-15deg);
+    }
+}
+
+
+
+/*Media Queries*/
+
+@media all and (max-width: 320px) and (max-width: 480px){
+    .pageh1{
+        font-size: 24px;
+    }
+    .grid{
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .grid_item:last-child{
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+    h1{
+        font-size: 22px;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 768px){
+    .grid {
+      -ms-grid-columns: 1fr 10px 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
+/*
+Order of statuses= visited->hover->active
+Defaults:
+-font size is 16px
+-line height is about 110% to 120%, 1.6 is recommended
+-indent is two spaces
+*/
