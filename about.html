@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codi's Portfolio</title>
+    <title>About Me</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/styles.production.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,17 +30,22 @@
         </nav>
   </header>
 
-  <div class="aboutmeprofile">
-    <h1 class="pageh1">About</h1>
-    <img class="aboutmeportrait" src="img/mountains.jpg">
-      <p class="aboutme">
-         Hello, my name's Codi. I was born in New York but <a href="https://www.greensboro-nc.gov/">Greensboro, NC</a> is really my home town. My first experience with Web Development was manually editing the HTML4 files to add a background image to my MySpace page back in 2004 before someone figured out how to make an "upload here" button.
-        <br>
-         My computer science related education includes experience in graphic design, drafting, 3D animation, and coding.
-      </p>
-      <a href="img/CRcv.pdf" download="CRcv">
-        <button class="downloadbutton">Download my CV here</button>
-      </a>
+  <h1 class="pageh1">About Me</h1>
+
+  <div class="aboutmeflexparent">
+      <div class="aboutmeflexchild">
+        <img class="aboutmeflexchild" src="img/mountains.jpg">
+      </div>
+      <div class="aboutmeflexchild">
+          <p>
+            Hello, my name's Codi. I was born in New York but <a class="greensborolink" href="https://www.greensboro-nc.gov/">Greensboro, NC</a> is really my home town. My first experience with Web Development was manually editing the HTML4 files to add a background image to my MySpace page back in 2004 before someone figured out how to make an "upload here" button.
+            <br>  
+            My computer science related education includes experience in graphic design, drafting, 3D animation, and coding.
+          </p>
+          <a href="img/CRcv.pdf" download="CRcv">
+            <button class="downloadbutton">Download my CV here</button>
+          </a>
+      </div>
   </div>
   <!--
 
@@ -76,8 +81,8 @@
       </table>
   -->
     <footer>
-        <a href="mailto:cjrobards@gmail.com.com">Shoot me an email</a>
-          <p>Let's Connect</p>
+        <a href="mailto:cjrobards@gmail.com.com">Send me an email</a>
+          <p class="letsconnect">Let's Connect</p>
             <div>
               <a class="profilelink" href="https://github.com/Codijr1">
                 <img width="30px" height="30px" enable-background="new 0 0 48 48" src="img/github-mark.svg" alt="Github logo"> 

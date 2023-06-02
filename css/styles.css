@@ -68,12 +68,14 @@ footer{
     height: fit-content;
     margin: 0;
 }
+/*
 .page-footer{
     flex: 1 1 100px;
     text-align: center;
     flex-direction: column;
     display: flex
 }
+*/
 .profilelink:hover{
     opacity: .8;
 }
