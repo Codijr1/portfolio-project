@@ -13,8 +13,7 @@ body{
     font-size: 20px;
 }
 
-/*Page Header*/
-
+                                                               /*Page Header*/
 .page-header{
     max-height: -webkit-fit-content;
     max-height: -moz-fit-content;
@@ -41,9 +40,7 @@ body{
     display: inline-block;
     margin-left: 15px;
 }
-section{
 
-}
 .grid{
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -79,7 +76,7 @@ section{
     padding: 1px;
 }
 
-/*Page Footer*/
+                                                                 /*Page Footer*/
 
 footer{
     display: block;
@@ -90,7 +87,7 @@ footer{
     height: -moz-fit-content;
     height: fit-content;
     margin: 0;
-    padding-bottom: 1px;
+    padding-bottom: 2px;
 }
 .letsconnect{
     margin: 2px;
@@ -129,13 +126,16 @@ a:link{color:#338eff}
 a:visited{color: #ff338e;}
 a:hover{
     font-weight: bold;
-    -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-            transform: scale(1.05);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 a:focus{font-weight: bold;}
 a:active{
     color: #133560;
+    -webkit-transform: scale(1.025);
+        -ms-transform: scale(1.025);
+            transform: scale(1.025);
 }
 
 table{
@@ -164,12 +164,7 @@ table{
     width: 300px; 
     height: 300px;
 }
-
-.homedescription{
-
-}
-
-/*About Me page*/
+                                                             /*About Me page*/
 .pageh1{
     font-size: 36px;
     margin: 1px;
@@ -205,16 +200,14 @@ table{
     display: inline;
 }
 
-button{
+.downloadbutton{
     font-family: inherit;
-    display: block;
+    display: inline-block;
     border: none;
     height: 30px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
-    width: fit-content;
-    color: #ffffff;
-    background-color:#338eff;
+    background-color:#ffffff;
     border-radius: 5px;
     -webkit-transition-duration: .1s;
          -o-transition-duration: .1s;
@@ -228,14 +221,14 @@ button{
     opacity: .95;
 }
 .downloadbutton:active{
-    -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(1.025);
+        -ms-transform: scale(1.025);
+            transform: scale(1.025);
 }
 
 
 
-/*Contact Me Page*/
+                                                            /*Contact Me Page*/
 
 .mailman{
     -webkit-animation-name: rotation;
@@ -263,7 +256,7 @@ form{
     display: inline-block;
 }
 
-/*Universals*/
+                                                            /*Universals*/
 p{
     color: undefined;
 }
@@ -271,7 +264,7 @@ p{
 
 li{list-style-type: none;}
 
-/*Keyframes and animations*/
+                                                        /*Keyframes and animations*/
 
 
 @-webkit-keyframes rotation {
@@ -301,7 +294,7 @@ li{list-style-type: none;}
 
 
 
-/*Media Queries*/
+                                                                /*Media Queries*/
 
 @media all and (max-width: 320px) and (max-width: 480px){
     .pageh1{
